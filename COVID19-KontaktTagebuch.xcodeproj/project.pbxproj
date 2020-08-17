@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		783B402524EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B401224EA7D8500CF390F /* COVID19_KontaktTagebuchApp.swift */; };
+		783B402624EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B401224EA7D8500CF390F /* COVID19_KontaktTagebuchApp.swift */; };
+		783B402724EA7D8600CF390F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B401324EA7D8500CF390F /* ContentView.swift */; };
+		783B402824EA7D8600CF390F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B401324EA7D8500CF390F /* ContentView.swift */; };
+		783B402924EA7D8600CF390F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783B401424EA7D8600CF390F /* Assets.xcassets */; };
+		783B402A24EA7D8600CF390F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783B401424EA7D8600CF390F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		783B401224EA7D8500CF390F /* COVID19_KontaktTagebuchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID19_KontaktTagebuchApp.swift; sourceTree = "<group>"; };
+		783B401324EA7D8500CF390F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		783B401424EA7D8600CF390F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		783B401924EA7D8600CF390F /* COVID19-KontaktTagebuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID19-KontaktTagebuch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783B401C24EA7D8600CF390F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783B402124EA7D8600CF390F /* COVID19-KontaktTagebuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID19-KontaktTagebuch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783B402324EA7D8600CF390F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783B402424EA7D8600CF390F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		783B401624EA7D8600CF390F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783B401E24EA7D8600CF390F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		783B400C24EA7D8500CF390F = {
+			isa = PBXGroup;
+			children = (
+				783B401124EA7D8500CF390F /* Shared */,
+				783B401B24EA7D8600CF390F /* iOS */,
+				783B402224EA7D8600CF390F /* macOS */,
+				783B401A24EA7D8600CF390F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		783B401124EA7D8500CF390F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				783B401224EA7D8500CF390F /* COVID19_KontaktTagebuchApp.swift */,
+				783B401324EA7D8500CF390F /* ContentView.swift */,
+				783B401424EA7D8600CF390F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		783B401A24EA7D8600CF390F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783B401924EA7D8600CF390F /* COVID19-KontaktTagebuch.app */,
+				783B402124EA7D8600CF390F /* COVID19-KontaktTagebuch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783B401B24EA7D8600CF390F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				783B401C24EA7D8600CF390F /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		783B402224EA7D8600CF390F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				783B402324EA7D8600CF390F /* Info.plist */,
+				783B402424EA7D8600CF390F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		783B401824EA7D8600CF390F /* COVID19-KontaktTagebuch (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783B402D24EA7D8600CF390F /* Build configuration list for PBXNativeTarget "COVID19-KontaktTagebuch (iOS)" */;
+			buildPhases = (
+				783B401524EA7D8600CF390F /* Sources */,
+				783B401624EA7D8600CF390F /* Frameworks */,
+				783B401724EA7D8600CF390F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COVID19-KontaktTagebuch (iOS)";
+			productName = "COVID19-KontaktTagebuch (iOS)";
+			productReference = 783B401924EA7D8600CF390F /* COVID19-KontaktTagebuch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		783B402024EA7D8600CF390F /* COVID19-KontaktTagebuch (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783B403024EA7D8600CF390F /* Build configuration list for PBXNativeTarget "COVID19-KontaktTagebuch (macOS)" */;
+			buildPhases = (
+				783B401D24EA7D8600CF390F /* Sources */,
+				783B401E24EA7D8600CF390F /* Frameworks */,
+				783B401F24EA7D8600CF390F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COVID19-KontaktTagebuch (macOS)";
+			productName = "COVID19-KontaktTagebuch (macOS)";
+			productReference = 783B402124EA7D8600CF390F /* COVID19-KontaktTagebuch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783B400D24EA7D8500CF390F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					783B401824EA7D8600CF390F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					783B402024EA7D8600CF390F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 783B401024EA7D8500CF390F /* Build configuration list for PBXProject "COVID19-KontaktTagebuch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783B400C24EA7D8500CF390F;
+			productRefGroup = 783B401A24EA7D8600CF390F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783B401824EA7D8600CF390F /* COVID19-KontaktTagebuch (iOS) */,
+				783B402024EA7D8600CF390F /* COVID19-KontaktTagebuch (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783B401724EA7D8600CF390F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783B402924EA7D8600CF390F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783B401F24EA7D8600CF390F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783B402A24EA7D8600CF390F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		783B401524EA7D8600CF390F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783B402724EA7D8600CF390F /* ContentView.swift in Sources */,
+				783B402524EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783B401D24EA7D8600CF390F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783B402824EA7D8600CF390F /* ContentView.swift in Sources */,
+				783B402624EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		783B402B24EA7D8600CF390F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		783B402C24EA7D8600CF390F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		783B402E24EA7D8600CF390F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CZEVM6X98;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "georgmeissner.COVID19-KontaktTagebuch";
+				PRODUCT_NAME = "COVID19-KontaktTagebuch";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		783B402F24EA7D8600CF390F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4CZEVM6X98;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "georgmeissner.COVID19-KontaktTagebuch";
+				PRODUCT_NAME = "COVID19-KontaktTagebuch";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		783B403124EA7D8600CF390F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4CZEVM6X98;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "georgmeissner.COVID19-KontaktTagebuch";
+				PRODUCT_NAME = "COVID19-KontaktTagebuch";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		783B403224EA7D8600CF390F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4CZEVM6X98;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "georgmeissner.COVID19-KontaktTagebuch";
+				PRODUCT_NAME = "COVID19-KontaktTagebuch";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		783B401024EA7D8500CF390F /* Build configuration list for PBXProject "COVID19-KontaktTagebuch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783B402B24EA7D8600CF390F /* Debug */,
+				783B402C24EA7D8600CF390F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783B402D24EA7D8600CF390F /* Build configuration list for PBXNativeTarget "COVID19-KontaktTagebuch (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783B402E24EA7D8600CF390F /* Debug */,
+				783B402F24EA7D8600CF390F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783B403024EA7D8600CF390F /* Build configuration list for PBXNativeTarget "COVID19-KontaktTagebuch (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783B403124EA7D8600CF390F /* Debug */,
+				783B403224EA7D8600CF390F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783B400D24EA7D8500CF390F /* Project object */;
+}
