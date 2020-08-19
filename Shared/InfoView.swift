@@ -23,7 +23,7 @@ struct InfoView: View {
                     Image(systemName: "laptopcomputer").font(.largeTitle)
                 }
                 Text("Geschrieben in Swift und SwiftUI auf einem MacBook.").font(.caption)
-                Link(destination: URL(string: "https://www.apple.com")!) {
+                Link(destination: URL(string: "https://github.com/supergeorg/COVID19-KontaktTagebuch/")!) {
                     Label("Projekt auf Github ansehen", systemImage: "network")
                 }
                 Divider()
