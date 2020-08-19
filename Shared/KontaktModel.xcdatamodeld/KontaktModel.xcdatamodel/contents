@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17175" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Kontakt" representedClassName="Kontakt" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="outdoor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="personen" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="kontakte" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="favourite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="groupname" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isgroup" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nachname" optional="YES" attributeType="String"/>
+        <attribute name="vorname" optional="YES" attributeType="String"/>
+        <relationship name="kontakte" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kontakt" inverseName="personen" inverseEntity="Kontakt"/>
+    </entity>
+    <elements>
+        <element name="Kontakt" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Person" positionX="-54" positionY="9" width="128" height="148"/>
+    </elements>
+</model>

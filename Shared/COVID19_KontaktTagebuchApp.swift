@@ -11,7 +11,7 @@ import SwiftUI
 struct COVID19_KontaktTagebuchApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, PersistentStore.shared.persistentContainer.viewContext)
         }
     }
 }

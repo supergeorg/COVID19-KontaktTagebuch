@@ -13,6 +13,32 @@
 		783B402824EA7D8600CF390F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B401324EA7D8500CF390F /* ContentView.swift */; };
 		783B402924EA7D8600CF390F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783B401424EA7D8600CF390F /* Assets.xcassets */; };
 		783B402A24EA7D8600CF390F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783B401424EA7D8600CF390F /* Assets.xcassets */; };
+		783B403524EA7DFC00CF390F /* KontaktModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 783B403324EA7DFC00CF390F /* KontaktModel.xcdatamodeld */; };
+		783B403624EA7DFC00CF390F /* KontaktModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 783B403324EA7DFC00CF390F /* KontaktModel.xcdatamodeld */; };
+		783B403824EA7FE800CF390F /* KontakteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403724EA7FE800CF390F /* KontakteView.swift */; };
+		783B403924EA7FE800CF390F /* KontakteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403724EA7FE800CF390F /* KontakteView.swift */; };
+		783B403B24EA7FF100CF390F /* PersonenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403A24EA7FF100CF390F /* PersonenView.swift */; };
+		783B403C24EA7FF100CF390F /* PersonenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403A24EA7FF100CF390F /* PersonenView.swift */; };
+		783B403E24EA808500CF390F /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403D24EA808500CF390F /* PersistentStore.swift */; };
+		783B403F24EA808500CF390F /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B403D24EA808500CF390F /* PersistentStore.swift */; };
+		783B404124EA823D00CF390F /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404024EA823D00CF390F /* PersonDetailView.swift */; };
+		783B404224EA823D00CF390F /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404024EA823D00CF390F /* PersonDetailView.swift */; };
+		783B404424EA826200CF390F /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404324EA826200CF390F /* PersonItemView.swift */; };
+		783B404524EA826200CF390F /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404324EA826200CF390F /* PersonItemView.swift */; };
+		783B404724EA862000CF390F /* PersonAddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404624EA862000CF390F /* PersonAddFormView.swift */; };
+		783B404824EA862000CF390F /* PersonAddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404624EA862000CF390F /* PersonAddFormView.swift */; };
+		783B404A24EA8CF000CF390F /* KontaktItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404924EA8CF000CF390F /* KontaktItemView.swift */; };
+		783B404B24EA8CF000CF390F /* KontaktItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404924EA8CF000CF390F /* KontaktItemView.swift */; };
+		783B404D24EA8D8A00CF390F /* KontaktDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404C24EA8D8A00CF390F /* KontaktDetailView.swift */; };
+		783B404E24EA8D8A00CF390F /* KontaktDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404C24EA8D8A00CF390F /* KontaktDetailView.swift */; };
+		783B405024EA8DE500CF390F /* KontaktAddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404F24EA8DE500CF390F /* KontaktAddFormView.swift */; };
+		783B405124EA8DE500CF390F /* KontaktAddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783B404F24EA8DE500CF390F /* KontaktAddFormView.swift */; };
+		78FEA02D24EBD71000E61E0E /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA02C24EBD71000E61E0E /* AnalyzeView.swift */; };
+		78FEA02E24EBD71000E61E0E /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA02C24EBD71000E61E0E /* AnalyzeView.swift */; };
+		78FEA03024EBE05B00E61E0E /* KontakteBetroffenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA02F24EBE05B00E61E0E /* KontakteBetroffenView.swift */; };
+		78FEA03124EBE05B00E61E0E /* KontakteBetroffenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA02F24EBE05B00E61E0E /* KontakteBetroffenView.swift */; };
+		78FEA03324EBEEDD00E61E0E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA03224EBEEDD00E61E0E /* InfoView.swift */; };
+		78FEA03424EBEEDD00E61E0E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FEA03224EBEEDD00E61E0E /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +50,19 @@
 		783B402124EA7D8600CF390F /* COVID19-KontaktTagebuch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID19-KontaktTagebuch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783B402324EA7D8600CF390F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783B402424EA7D8600CF390F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		783B403424EA7DFC00CF390F /* KontaktModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KontaktModel.xcdatamodel; sourceTree = "<group>"; };
+		783B403724EA7FE800CF390F /* KontakteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakteView.swift; sourceTree = "<group>"; };
+		783B403A24EA7FF100CF390F /* PersonenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonenView.swift; sourceTree = "<group>"; };
+		783B403D24EA808500CF390F /* PersistentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		783B404024EA823D00CF390F /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		783B404324EA826200CF390F /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
+		783B404624EA862000CF390F /* PersonAddFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAddFormView.swift; sourceTree = "<group>"; };
+		783B404924EA8CF000CF390F /* KontaktItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktItemView.swift; sourceTree = "<group>"; };
+		783B404C24EA8D8A00CF390F /* KontaktDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktDetailView.swift; sourceTree = "<group>"; };
+		783B404F24EA8DE500CF390F /* KontaktAddFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktAddFormView.swift; sourceTree = "<group>"; };
+		78FEA02C24EBD71000E61E0E /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
+		78FEA02F24EBE05B00E61E0E /* KontakteBetroffenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontakteBetroffenView.swift; sourceTree = "<group>"; };
+		78FEA03224EBEEDD00E61E0E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +97,20 @@
 			isa = PBXGroup;
 			children = (
 				783B401224EA7D8500CF390F /* COVID19_KontaktTagebuchApp.swift */,
+				783B403324EA7DFC00CF390F /* KontaktModel.xcdatamodeld */,
 				783B401324EA7D8500CF390F /* ContentView.swift */,
+				783B403724EA7FE800CF390F /* KontakteView.swift */,
+				783B404F24EA8DE500CF390F /* KontaktAddFormView.swift */,
+				783B404924EA8CF000CF390F /* KontaktItemView.swift */,
+				783B404C24EA8D8A00CF390F /* KontaktDetailView.swift */,
+				78FEA02C24EBD71000E61E0E /* AnalyzeView.swift */,
+				78FEA02F24EBE05B00E61E0E /* KontakteBetroffenView.swift */,
+				78FEA03224EBEEDD00E61E0E /* InfoView.swift */,
+				783B403A24EA7FF100CF390F /* PersonenView.swift */,
+				783B404624EA862000CF390F /* PersonAddFormView.swift */,
+				783B404324EA826200CF390F /* PersonItemView.swift */,
+				783B404024EA823D00CF390F /* PersonDetailView.swift */,
+				783B403D24EA808500CF390F /* PersistentStore.swift */,
 				783B401424EA7D8600CF390F /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +239,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783B404424EA826200CF390F /* PersonItemView.swift in Sources */,
+				783B404724EA862000CF390F /* PersonAddFormView.swift in Sources */,
+				78FEA02D24EBD71000E61E0E /* AnalyzeView.swift in Sources */,
 				783B402724EA7D8600CF390F /* ContentView.swift in Sources */,
+				783B403B24EA7FF100CF390F /* PersonenView.swift in Sources */,
+				783B404A24EA8CF000CF390F /* KontaktItemView.swift in Sources */,
+				783B403E24EA808500CF390F /* PersistentStore.swift in Sources */,
+				783B403824EA7FE800CF390F /* KontakteView.swift in Sources */,
+				783B405024EA8DE500CF390F /* KontaktAddFormView.swift in Sources */,
+				78FEA03024EBE05B00E61E0E /* KontakteBetroffenView.swift in Sources */,
 				783B402524EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */,
+				783B403524EA7DFC00CF390F /* KontaktModel.xcdatamodeld in Sources */,
+				783B404124EA823D00CF390F /* PersonDetailView.swift in Sources */,
+				78FEA03324EBEEDD00E61E0E /* InfoView.swift in Sources */,
+				783B404D24EA8D8A00CF390F /* KontaktDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +261,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783B404524EA826200CF390F /* PersonItemView.swift in Sources */,
+				783B404824EA862000CF390F /* PersonAddFormView.swift in Sources */,
+				78FEA02E24EBD71000E61E0E /* AnalyzeView.swift in Sources */,
 				783B402824EA7D8600CF390F /* ContentView.swift in Sources */,
+				783B403C24EA7FF100CF390F /* PersonenView.swift in Sources */,
+				783B404B24EA8CF000CF390F /* KontaktItemView.swift in Sources */,
+				783B403F24EA808500CF390F /* PersistentStore.swift in Sources */,
+				783B403924EA7FE800CF390F /* KontakteView.swift in Sources */,
+				783B405124EA8DE500CF390F /* KontaktAddFormView.swift in Sources */,
+				78FEA03124EBE05B00E61E0E /* KontakteBetroffenView.swift in Sources */,
 				783B402624EA7D8600CF390F /* COVID19_KontaktTagebuchApp.swift in Sources */,
+				783B403624EA7DFC00CF390F /* KontaktModel.xcdatamodeld in Sources */,
+				783B404224EA823D00CF390F /* PersonDetailView.swift in Sources */,
+				78FEA03424EBEEDD00E61E0E /* InfoView.swift in Sources */,
+				783B404E24EA8D8A00CF390F /* KontaktDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +517,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		783B403324EA7DFC00CF390F /* KontaktModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				783B403424EA7DFC00CF390F /* KontaktModel.xcdatamodel */,
+			);
+			currentVersion = 783B403424EA7DFC00CF390F /* KontaktModel.xcdatamodel */;
+			path = KontaktModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 783B400D24EA7D8500CF390F /* Project object */;
 }
