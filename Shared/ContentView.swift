@@ -21,13 +21,6 @@ func formatDuration(duration2format: Double) -> String {
     return dcf.string(from: duration2format) ?? "Fehler"
 }
 
-enum enum_contactType {
-    case privatemeet
-    case eatingout
-    case gathering
-    case sport
-}
-
 struct ContentView: View {
     @State var tabSelection = 1
     var body: some View {
@@ -62,6 +55,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.managedObjectContext, PersistentStore.preview.persistentContainer.viewContext)
     }
 }

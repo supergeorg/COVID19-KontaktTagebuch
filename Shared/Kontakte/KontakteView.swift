@@ -24,20 +24,22 @@ struct KontakteView: View {
                     NavigationLink(destination: KontaktDetailView(kontakt: kontakt, isReadOnly: false)) {
                         KontaktItemView(kontakt: kontakt)
                     }
-                }.animation(.default)
-            }.navigationBarTitle("Kontakte")
-            .navigationBarItems(trailing:
-                                    HStack{
-                                        Button(action: {showAddKontakt = true}, label: {Image(systemName: "text.badge.plus")})
-                                            .sheet(isPresented: self.$showAddKontakt, content: {KontaktAddFormView(isShown: self.$showAddKontakt).environment(\.managedObjectContext, self.moc)})
-                                    }
-            )
+                }
+            }
+            .animation(.default)
+            .navigationBarTitle("Kontakte")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {showAddKontakt = true}, label: {Image(systemName: "text.badge.plus")})
+                }
+            }
         }
+        .sheet(isPresented: self.$showAddKontakt, content: {KontaktAddFormView(isShown: self.$showAddKontakt).environment(\.managedObjectContext, self.moc)})
     }
 }
 
 struct KontakteView_Previews: PreviewProvider {
     static var previews: some View {
-        KontakteView()
+        KontakteView().environment(\.managedObjectContext, PersistentStore.preview.persistentContainer.viewContext)
     }
 }

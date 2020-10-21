@@ -9,6 +9,9 @@ import SwiftUI
 
 struct PersonItemView: View {
     var person: Person
+    
+    @State var isFavourite: Bool
+    
     var body: some View {
         HStack{
             if person.isgroup {
@@ -16,8 +19,7 @@ struct PersonItemView: View {
                 Text(person.groupname ?? "kein Gruppenname")
             } else {
                 Image(systemName: "person")
-                Text(person.vorname ?? "kein Vorame")
-                Text(person.nachname ?? "kein Nachname")
+                Text("\(person.vorname ?? "kein Vorame") \(person.nachname ?? "kein Nachname")")
             }
             if person.favourite {
                 Spacer()
@@ -29,6 +31,6 @@ struct PersonItemView: View {
 
 struct PersonItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonItemView(person: Person())
+        PersonItemView(person: Person(), isFavourite: true)
     }
 }

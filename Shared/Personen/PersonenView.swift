@@ -20,26 +20,27 @@ struct PersonenView: View {
                 if personen.isEmpty {
                     Text("Noch keine Person eingetragen.").padding()
                 }
-                ForEach(personen, id:\.id){person in
-                    NavigationLink(destination: PersonDetailView(person: person, isfavourite: person.favourite, isReadOnly: false)) {
-                        PersonItemView(person: person)
+                ForEach(personen, id:\Person.id){person in
+                    NavigationLink(destination: PersonDetailView(person: person, isFavourite: person.favourite, isReadOnly: false)) {
+                        PersonItemView(person: person, isFavourite: person.favourite)
                     }
                 }.animation(.default)
             }
             .animation(.default)
             .navigationBarTitle("Personen")
-            .navigationBarItems(trailing:
-                                    HStack{
-                                        Button(action: {showAddPerson = true}, label: {Image(systemName: "person.crop.circle.fill.badge.plus")})
-                                            .sheet(isPresented: self.$showAddPerson, content: {PersonAddFormView(isShown: self.$showAddPerson).environment(\.managedObjectContext, self.moc)})
-                                    }
-            )
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button(action: {showAddPerson = true}, label: {
+                            Image(systemName: "person.crop.circle.fill.badge.plus")})
+                }
+            }
         }
+        .sheet(isPresented: self.$showAddPerson, content: {PersonAddFormView(isShown: self.$showAddPerson).environment(\.managedObjectContext, self.moc)})
     }
 }
 
 struct PersonenView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonenView()
+        PersonenView().environment(\.managedObjectContext, PersistentStore.preview.persistentContainer.viewContext)
     }
 }

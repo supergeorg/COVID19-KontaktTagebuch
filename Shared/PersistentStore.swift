@@ -5,11 +5,59 @@
 //  Created by Georg Meissner on 17.08.20.
 //
 
-import Foundation
+//import Foundation
 import CoreData
 
-final class PersistentStore: ObservableObject {
+struct PersistentStore {
     static let shared = PersistentStore()
+    
+        static var preview: PersistentStore = {
+            let result = PersistentStore(inMemory: true)
+            let viewContext = result.persistentContainer.viewContext
+            
+            let person1 = Person(context: viewContext)
+            person1.id = UUID()
+            person1.isgroup = false
+            person1.vorname = "Hans-Peter"
+            person1.nachname = "Test"
+            
+            let gruppe1 = Person(context: viewContext)
+            gruppe1.id = UUID()
+            gruppe1.isgroup = true
+            gruppe1.groupname = "Testgruppe"
+            
+            let kontakt1 = Kontakt(context: viewContext)
+            kontakt1.id = UUID()
+            kontakt1.title = "Kontakt 1"
+            kontakt1.date = Date()
+            kontakt1.duration = 15.0
+            kontakt1.outdoor = true
+            kontakt1.personen = [person1]
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+            return result
+        }()
+    
+    let persistentContainer: NSPersistentCloudKitContainer
+    
+    init(inMemory: Bool = false) {
+        persistentContainer = NSPersistentCloudKitContainer(name: "COVID19_KontaktTagebuch")
+        if inMemory {
+            persistentContainer.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+        }
+        persistentContainer.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+    }
     
     func fetchKontakte() -> NSFetchRequest<Kontakt> {
         let request: NSFetchRequest<Kontakt> = Kontakt.fetchRequest()
@@ -80,7 +128,7 @@ final class PersistentStore: ObservableObject {
         }
     }
     
-    func addKontakt(title: String, date: Date, isOutdoor: Bool, duration: Double, kontaktPersonen: Set<Person>) {
+    func addKontakt(title: String, date: Date, isOutdoor: Bool, duration: Double, kontaktPersonen: Set<Person>, type: KontaktModes) {
         let entityName = "Kontakt"
         let moc = persistentContainer.viewContext
         
@@ -94,6 +142,7 @@ final class PersistentStore: ObservableObject {
         newKontakt.setValue(date, forKey: "date")
         newKontakt.setValue(duration, forKey: "duration")
         newKontakt.setValue(isOutdoor, forKey: "outdoor")
+        newKontakt.setValue(type.rawValue, forKey: "type")
         
         let personen = newKontakt.mutableSetValue(forKey: "personen")
         for person in kontaktPersonen{
@@ -127,16 +176,6 @@ final class PersistentStore: ObservableObject {
         }
     }
     
-    var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "KontaktModel")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-    
     func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -148,4 +187,5 @@ final class PersistentStore: ObservableObject {
             }
         }
     }
+    
 }

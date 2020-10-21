@@ -11,9 +11,10 @@ struct KontaktItemView: View {
     var kontakt: Kontakt
     var body: some View {
         VStack(alignment: .leading){
-            Text(kontakt.title ?? "").font(.headline)
+            Text(kontakt.title ?? "").font(.title)
             Text(formatDate(date2format: kontakt.date ?? Date())).font(.caption)
-            Text("\(kontakt.personen?.count ?? 0) Personen")
+//            Text("\(kontakt.personen?.count ?? 0) Personen")
+            Text("\((kontakt.personen?.count ?? 0 > 0) ? "\(kontakt.personen?.count ?? 0)" : "Unbekannte") Personen")
         }
     }
 }
